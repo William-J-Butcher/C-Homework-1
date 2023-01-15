@@ -4,10 +4,17 @@
 // 8 -> 2, 4, 6, 8
 
 
+
 Console.WriteLine("Введите число:");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 for(int i = 1; i <= num; ++i)
+{       if(i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+for(int i = -1; i >= num; --i)
 {       if(i % 2 == 0)
     {
         Console.WriteLine(i);
